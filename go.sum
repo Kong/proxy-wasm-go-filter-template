@@ -1,0 +1,4 @@
+github.com/pquerna/ffjson v0.0.0-20190930134022-aa0246cd15f7 h1:xoIK0ctDddBMnc74udxJYBqlo9Ylnsp1waqjLsnef20=
+github.com/pquerna/ffjson v0.0.0-20190930134022-aa0246cd15f7/go.mod h1:YARuvh7BUWHNhzDq2OM5tzR2RiCcN2D7sapiKyCel/M=
+github.com/tetratelabs/proxy-wasm-go-sdk v0.19.0 h1:x1tYFXF7cCWU7mcZ6TksIjMAk0juu8pBUpK940mo7wo=
+github.com/tetratelabs/proxy-wasm-go-sdk v0.19.0/go.mod h1:wigepC0JkAsczvWZzWvhPidwBFLpPykNz6e9jc9D/8s=
