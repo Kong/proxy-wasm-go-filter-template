@@ -1,1 +1,3 @@
 *.wasm
+ffjson*
+config_ffjson*
