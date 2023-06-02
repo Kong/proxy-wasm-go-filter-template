@@ -7,12 +7,14 @@ import (
 // -----------------------------------------------------------------------------
 // Instance Config
 // -----------------------------------------------------------------------------
+//go:generate ffjson -noencoder $GOFILE
 
 // Config represents the filter configuration
 type Config struct {
 	MyStatusCode uint32 `json:"my_status_code"`
 }
 
+// Load json config from data into conf
 func Load(data []byte, conf *Config) error {
 	conf.MyStatusCode = 0
 
