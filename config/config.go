@@ -11,12 +11,12 @@ import (
 
 // Config represents the filter configuration
 type Config struct {
-	MyStatusCode uint32 `json:"my_status_code"`
+	MyGreeting string `json:"my_greeting"`
 }
 
 // Load json config from data into conf
 func Load(data []byte, conf *Config) error {
-	conf.MyStatusCode = 0
+	conf.MyGreeting = "Hello, Wasm!"
 
 	err := ffjson.Unmarshal(data, conf)
 	if err != nil {

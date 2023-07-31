@@ -90,9 +90,9 @@ func (ctx *myPluginContext) NewHttpContext(pluginID uint32) types.HttpContext {
 // }
 
 func (ctx *myPluginHTTPContext) OnHttpResponseHeaders(int, bool) types.Action {
-	if ctx.conf.MyStatusCode > 0 {
-		status := fmt.Sprintf("%v", ctx.conf.MyStatusCode)
-		proxywasm.ReplaceHttpResponseHeader("status", status)
+	if ctx.conf.MyGreeting != "" {
+		greeting := fmt.Sprintf("%v", ctx.conf.MyGreeting)
+		proxywasm.AddHttpResponseHeader("X-Greeting", greeting)
 	}
 	return types.ActionContinue
 }
