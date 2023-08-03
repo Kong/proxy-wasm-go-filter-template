@@ -17,7 +17,7 @@ for the list of supported functions and entrypoints.
 ## Requirements
 
 * [tinygo](https://tinygo.org) - a Go compiler that can produce WebAssembly code.
-* [proxy-wasm-go-sdk](github.com/tetratelabs/proxy-wasm-go-sdk) - the SDK whihc
+* [proxy-wasm-go-sdk](https://github.com/tetratelabs/proxy-wasm-go-sdk) - the SDK which
   implements the proxy-wasm API
 * [ffjson](https://github.com/pquerna/ffjson) - a code-generation based JSON
   library for Go; this is used to demonstrate the parsing of JSON configuration
