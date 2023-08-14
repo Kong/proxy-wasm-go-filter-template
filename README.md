@@ -17,16 +17,10 @@ for the list of supported functions and entrypoints.
 ## Requirements
 
 * [tinygo](https://tinygo.org) - a Go compiler that can produce WebAssembly code.
-* [proxy-wasm-go-sdk](github.com/tetratelabs/proxy-wasm-go-sdk) - the SDK whihc
-  implements the proxy-wasm API
-* [ffjson](https://github.com/pquerna/ffjson) - a code-generation based JSON
-  library for Go; this is used to demonstrate the parsing of JSON configuration
-  in filters. Once you install this, you need the `ffjson` utility in your PATH
-  for building.
 
 ## Build
 
-Once the environment is set up with the requirements, build the filter running
+Once the Go environment is set up and tinygo is in the PATH, build the filter running
 `make`.
 
 This will produce a .wasm file in the root of the project.
