@@ -1,0 +1,8 @@
+{
+   "config_schema": {
+      "type": "object",
+      "properties": {
+         "my_greeting": { "type": "string" }
+      }
+   }
+}

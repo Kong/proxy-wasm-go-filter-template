@@ -1,0 +1,16 @@
+_format_version: "1.1"
+
+services:
+- name: demo
+  url: http://httpbin.org
+# url: http://host.docker.internal:6502
+  routes:
+  - name: my-route
+    paths:
+    - /
+    strip_path: false
+    filter_chains:
+    - filters:
+      - name: my-go-filter
+        config:
+          my_greeting: "Hello from Go on Wasm!"
