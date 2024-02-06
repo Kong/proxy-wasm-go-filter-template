@@ -4,6 +4,14 @@ set -x
 DEMO_KONG_CONTAINER="${DEMO_KONG_CONTAINER:-kong-wasm}"
 DEMO_KONG_IMAGE="${DEMO_KONG_IMAGE:-kong/kong:nightly}"
 
+function message() {
+    set +x
+    echo "----------------------------------------------------------------------"
+    echo $1
+    echo "----------------------------------------------------------------------"
+    set -x
+}
+
 ################################################################################
 
 if [[ "$1" == "stop" ]]
@@ -14,6 +22,8 @@ then
 fi
 
 ### Build filter ###############################################################
+
+message "Building the filter using tinygo..."
 
 (
     cd ..
@@ -29,6 +39,8 @@ cp -a ../*.wasm ../*.meta.json wasm/
 script_dir=$(dirname $(realpath $0))
 
 ### Start container ############################################################
+
+message "Setting up the Kong Gateway container..."
 
 docker stop $DEMO_KONG_CONTAINER
 docker rm $DEMO_KONG_CONTAINER
@@ -60,14 +72,20 @@ docker run -d --name "$DEMO_KONG_CONTAINER" \
 
 ### Show configuration #########################################################
 
+message "This is the configuration loaded into Kong:"
+
 cat config/demo.yml
 
 sleep 5
 
 ### Issue requests #############################################################
 
+message "Now let's send a request to see the filter in effect:"
+
 http :8000/anything
 
-#docker stop $DEMO_KONG_CONTAINER
+message "Finishing up!"
+
+docker stop $DEMO_KONG_CONTAINER
 #docker rm $DEMO_KONG_CONTAINER
 

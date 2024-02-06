@@ -24,3 +24,12 @@ Once the Go environment is set up and tinygo is in the PATH, build the filter ru
 `make`.
 
 This will produce a .wasm file in the root of the project.
+
+## Testing
+
+In the `test/` folder you will find a shell script called `demo.sh` which
+builds the filter, then uses Docker to spin up a [Kong Gateway](https://konghq.com)
+container with the filter enabled, and issues a request using [httpie](https://httpie.io).
+It uses the configuration `test/config`. You should see the `X-Greeting` header defined
+in that configuration in the httpie output.
+

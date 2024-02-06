@@ -1,3 +1,4 @@
+
 _format_version: "1.1"
 
 services:
@@ -14,3 +15,4 @@ services:
       - name: my-go-filter
         config:
           my_greeting: "Hello from Go on Wasm!"
+
