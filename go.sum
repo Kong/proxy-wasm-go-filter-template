@@ -1,4 +1,8 @@
+github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
+github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pquerna/ffjson v0.0.0-20190930134022-aa0246cd15f7 h1:xoIK0ctDddBMnc74udxJYBqlo9Ylnsp1waqjLsnef20=
 github.com/pquerna/ffjson v0.0.0-20190930134022-aa0246cd15f7/go.mod h1:YARuvh7BUWHNhzDq2OM5tzR2RiCcN2D7sapiKyCel/M=
-github.com/tetratelabs/proxy-wasm-go-sdk v0.19.0 h1:x1tYFXF7cCWU7mcZ6TksIjMAk0juu8pBUpK940mo7wo=
-github.com/tetratelabs/proxy-wasm-go-sdk v0.19.0/go.mod h1:wigepC0JkAsczvWZzWvhPidwBFLpPykNz6e9jc9D/8s=
+github.com/stretchr/testify v1.9.0 h1:HtqpIVDClZ4nwg75+f6Lvsy/wHu+3BoSGCbBAcpTsTg=
+github.com/tetratelabs/proxy-wasm-go-sdk v0.24.0 h1:Xuwzknb4+OHBSYFXif0aBdV0F4MShL8L5YYFda9uUIs=
+github.com/tetratelabs/proxy-wasm-go-sdk v0.24.0/go.mod h1:niJQcnEDtftzrVC0/qqlSs2Kzr1dwb7VxpIPHBO2XXk=
+gopkg.in/yaml.v3 v3.0.1 h1:fxVm/GzAzEWqLHuvctI91KS9hhNmmWOoWu0XTYJS7CA=
